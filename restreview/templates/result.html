@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+  <form type="get" action="/result/" style="text-align:center;margin-top:40px; margin-bottom:50px">
+
+      <input  id="search_bar" type="text" name="search_bar" style="height:30px; width:400px; margin-right:20px; font-size:15px">
+      <button id="submit" type="submit" style="height:20px; width:60px">Search</button>
+
+  </form>
+
+  <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Reviews</h1>
+</head>
+
+<body>
+  <table style="margin-left:100px; margin-top:20px; margin-right:50px">
+      <tr>
+        <th> Restaurant ID   </th>
+        <th> Sentiments </th>
+        <th> Rating </th>
+        <th> Comment </th>
+      </tr>
+      {% for x in doc %}
+      <tr>
+        <td id="restID">{{x.RestaurantID}}</td>
+        <td id="sentiments"></td>
+        <td id="rating">{{x.Rating}}</td>
+        <td id="review" style="padding:10px">{{x.Reviews}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>
