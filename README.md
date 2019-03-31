@@ -1,6 +1,6 @@
 # IRproject
 
-install django 
+install django == 1.11.4
 
 open terminal type : "$ pipenv install requests" to import python requests library
 
