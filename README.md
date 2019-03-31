@@ -2,7 +2,7 @@
 
 install django 
 
-open terminal type : "$ pipenv install requests" to import requests library
+open terminal type : "$ pipenv install requests" to import python requests library
 
 open terminal, go to solr file type : "bin/solr start" to start solr server" (must open solr first cuz django website
 is making requests to solr server for API)
