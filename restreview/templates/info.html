@@ -12,25 +12,23 @@
 
   </form>
 
-  <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Reviews</h1>
+  <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Restaurant</h1>
 </head>
 
 <body>
   <table style="margin-left:100px; margin-top:20px; margin-right:50px">
       <tr>
-        <th> Restaurant </th>
-        <th> Image </th>
-        <th> Price </th>
-        <th> Type </th>
+        <th> Restaurant ID   </th>
+        <th> Sentiments </th>
         <th> Rating </th>
+        <th> Comment </th>
       </tr>
       {% for x in doc %}
       <tr>
-        <td> <a href="/info/?RestaurantID={{x.ID|cut:"["|cut:"]"}}">{{x.Restaurant | cut:"['" | cut:"']" }} </a></td>
-        <td> </td>
-        <td>{{x.Price | cut:"['" | cut:"']"}}</td>
-        <td>{{x.Type | cut:"['" | cut:"']" }}</td>
-        <td>{{x.Number | cut:"['" | cut:"']"}}</td>
+        <td id="restID">{{x.RestaurantID| cut:"['" | cut:"']"}}</td>
+        <td id="sentiments"></td>
+        <td id="rating">{{x.Rating | cut:"['" | cut:"']"}}</td>
+        <td id="review" style="padding:10px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
       </tr>
       {% endfor %}
     </table>
