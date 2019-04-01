@@ -15,6 +15,10 @@ def result(request):
     try:
         if(request.method == "GET"):
             query = request.GET.get('search_bar', None)
+            #if(request.GET.get('checkbox',None) == null):
+            #    print("checkbox is unchecked")
+            #else:
+            #    print("checkbox is checked")
             words = query.split()
             for x in words:
                 print(x)
