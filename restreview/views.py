@@ -24,14 +24,13 @@ def result(request):
             else:
                 print("unchecked")
                 doc = search_by_restaurant(query)
-
             #print(doc)
-
     except:
         raise Http404('restaurant/review not found')
 
     return render(request, 'result.html',{'doc':doc})
     #return render(request, 'result.html')
+
 
 def info(request):
     try:
