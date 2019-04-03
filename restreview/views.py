@@ -5,6 +5,7 @@ from django.http import Http404
 from .models import Restaurant
 from .models import Review
 import requests
+from .search import search_by_restaurant, search_by_review
 # Create your views here.
 
 def home(request):
@@ -15,37 +16,17 @@ def result(request):
     try:
         if(request.method == "GET"):
             query = request.GET.get('search_bar', None)
-            #if(request.GET.get('checkbox',None) == null):
-            #    print("checkbox is unchecked")
-            #else:
-            #    print("checkbox is checked")
-            words = query.split()
-            for x in words:
-                print(x)
+            #query2 = request.GET.get('checkbox', None)
+            #print("checkbox1111 is "+query2)
+            if request.GET.get('checkbox', None) == "on":
+                print("checked")
+                doc = search_by_review(query)
+            else:
+                print("unchecked")
+                doc = search_by_restaurant(query)
 
-            url = "http://localhost:8983/solr/restaurants/select?q="
-            #url += "Restaurant%3A" + x
+            #print(doc)
 
-            for i, x in enumerate(words):
-                if(i == 0):
-                    url += "Restaurant%3A"+ x
-                else:
-                    url += "%20%7C%7C%20Restaurant%3A"+ x
-
-                url += "%20%7C%7C%20Price%3A" + x
-                url += "%20%7C%7C%20Number%3A" + x
-                url += "%20%7C%7C%20Type%3A" + x
-
-            url = url + "&rows=10"
-
-            #url = "http://localhost:8983/solr/reviews/select?q=Reviews%3A" + x +"&rows=10"
-            #http://localhost:8983/solr/restaurants/select?q=Restaurant%3Aupstate%20%7C%7C%20Type%3Aseafood%20%7C%7C%20Restaurant%3ABurger
-            #"%20%7C%7C%20"
-            print(url)
-            r = requests.get(url)
-            json_data = r.json()
-            doc = json_data["response"]["docs"]
-            print(doc)
     except:
         raise Http404('restaurant/review not found')
 
