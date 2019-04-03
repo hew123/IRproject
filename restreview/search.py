@@ -59,4 +59,21 @@ def search_by_review(query):
 
     print(list)
 
-    return doc
+    url2 ="http://localhost:8983/solr/restaurants/select?q="
+
+    #url2 += "ID%3A"+ str(list[0])
+
+    for i, x in enumerate(list):
+        if(i==0):
+            url2 += "ID%3A"+ str(x)
+        else:
+            url2 += "%20%7C%7C%20ID%3A"+ str(x)
+
+    url2 += "&rows=10"
+
+    print(url2)
+    r2 = requests.get(url2)
+    json_data2 = r2.json()
+    doc2 = json_data2["response"]["docs"]
+
+    return doc2
