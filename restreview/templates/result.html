@@ -12,11 +12,26 @@
       <br><br><input type="checkbox" name="checkbox">search by review
 
   </form>
-
-  <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Restaurants</h1>
 </head>
 
 <body>
+  <div id="restaurant_list" style="margin:0px 0px 0px 100px">
+    <h1 style="text-align:left; margin-left:40px ;margin-top:20px; margin-down:100px; font-size:30px; font-style: oblique"> Restaurants</h1>
+      <ul style="margin:70px 0px 0px 0px; list-style-type:none">
+        {% for x in doc %}
+        <li>
+          <p> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}" style="font-size:20px">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></p>
+            <p>{{x.0.Price | cut:"['" | cut:"']"}}
+            {{x.0.Type | cut:"['" | cut:"']" }}
+            {{x.0.Number | cut:"['" | cut:"']"}}</p>
+          <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</p>
+          <p> image </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!--
   <table style="margin-left:100px; margin-top:20px; margin-right:50px">
       <tr>
         <th> Restaurant </th>
@@ -24,7 +39,7 @@
         <th> Price </th>
         <th> Type </th>
         <th> Rating </th>
-        <th> Top comments </th>
+        <th style="width: 50px;height: 50px;"> Top comments </th>
       </tr>
       {% for x in doc %}
       <tr>
@@ -33,9 +48,25 @@
         <td>{{x.0.Price | cut:"['" | cut:"']"}}</td>
         <td>{{x.0.Type | cut:"['" | cut:"']" }}</td>
         <td>{{x.0.Number | cut:"['" | cut:"']"}}</td>
-        <td>{{x.1}}</td>
+        <td style="width:200px;height:50px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</td>
       </tr>
       {% endfor %}
     </table>
+  -->
+    <!--<div id="restaurant_list">
+          <ul style="list-style-type:none">
+            {% for x in doc %}
+            <li> wtffff </li>
+              <<a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a>
+              <p>{{x.0.Price | cut:"['" | cut:"']"}}</p>
+              <p>{{x.0.Type | cut:"['" | cut:"']" }}</p>
+              <p>{{x.0.Number | cut:"['" | cut:"']"}}</p>
+              <p style="width:200px;height:50px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</p>
+            </li>>
+            {% endfor %}
+          </ul>
+        </div>-->
+
+
 </body>
 </html>
