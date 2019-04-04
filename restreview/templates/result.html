@@ -10,7 +10,6 @@
       <input  id="search_bar" type="text" name="search_bar" style="height:30px; width:400px; margin-right:20px; font-size:15px">
       <button id="submit" type="submit" style="height:20px; width:60px">Search</button>
       <br><br><input type="checkbox" name="checkbox">search by review
-
   </form>
 </head>
 
@@ -20,12 +19,19 @@
       <ul style="margin:70px 0px 0px 0px; list-style-type:none">
         {% for x in doc %}
         <li>
+          <div class="row" style="clear:left;">
+          <div style="width:15%;float:left">
+            <img src="{{x.0.Image| cut:"['" | cut:"']"}}" style="width:200px;height:200px">
+          </div>
+          <div style="margin-left:30%;">
           <p> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}" style="font-size:20px">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></p>
             <p>{{x.0.Price | cut:"['" | cut:"']"}}
             {{x.0.Type | cut:"['" | cut:"']" }}
             {{x.0.Number | cut:"['" | cut:"']"}}</p>
           <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</p>
-          <p> image </p>
+          <br><br>
+        </div>
+      </div>
         </li>
       {% endfor %}
     </ul>

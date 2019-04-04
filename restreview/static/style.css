@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 table, th, td{
   //border: 1px solid black;
   border-collapse:collapse;
@@ -15,3 +19,18 @@ th:hover {
 p:hover{
   background-color: yellow;
 }
+
+.row{
+  background-color: green;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+div:after {
+      content: "";
+      clear: both;
+      display: table;
+  }
