@@ -24,14 +24,16 @@
         <th> Price </th>
         <th> Type </th>
         <th> Rating </th>
+        <th> Top comments </th>
       </tr>
       {% for x in doc %}
       <tr>
-        <td> <a href="/info/?RestaurantID={{x.ID|cut:"["|cut:"]"}}">{{x.Restaurant | cut:"['" | cut:"']" }} </a></td>
+        <td> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></td>
         <td> </td>
-        <td>{{x.Price | cut:"['" | cut:"']"}}</td>
-        <td>{{x.Type | cut:"['" | cut:"']" }}</td>
-        <td>{{x.Number | cut:"['" | cut:"']"}}</td>
+        <td>{{x.0.Price | cut:"['" | cut:"']"}}</td>
+        <td>{{x.0.Type | cut:"['" | cut:"']" }}</td>
+        <td>{{x.0.Number | cut:"['" | cut:"']"}}</td>
+        <td>{{x.1}}</td>
       </tr>
       {% endfor %}
     </table>

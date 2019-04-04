@@ -26,7 +26,29 @@ def search_by_restaurant(query):
     r = requests.get(url)
     json_data = r.json()
     doc = json_data["response"]["docs"]
-    return doc
+
+    review_list = []
+
+    for x in doc:
+        a = x["ID"][0]
+        url2 = "http://localhost:8983/solr/reviews/select?q=RestaurantID%3A" + str(a) + "&rows=10"
+        print(url2)
+        r2 = requests.get(url2)
+        json_data2 = r2.json()
+        doc2 = json_data2["response"]["docs"]
+        if(len(doc2) == 0):
+            print("doc is empty")
+            first_review = ""
+        else:
+            first_review = doc2[0]["Reviews"][0]
+            #print(first_review)
+        review_list.append(first_review)
+
+    #print(review_list)
+
+    doc_with_reviews = zip(doc,review_list)
+
+    return doc_with_reviews
 
 
 
@@ -50,20 +72,22 @@ def search_by_review(query):
     r = requests.get(url)
     json_data = r.json()
     doc = json_data["response"]["docs"]
-    list = []
+    ID_list = []
+    review_list = []
 
     for x in doc:
         a = x["RestaurantID"][0]
-        if a not in list:
-            list.append(a)
+        b = x["Reviews"][0]
+        if a not in ID_list:
+            ID_list.append(a)
+            review_list.append(b)
 
-    print(list)
+    print(ID_list)
+    #print(review_list)
 
     url2 ="http://localhost:8983/solr/restaurants/select?q="
 
-    #url2 += "ID%3A"+ str(list[0])
-
-    for i, x in enumerate(list):
+    for i, x in enumerate(ID_list):
         if(i==0):
             url2 += "ID%3A"+ str(x)
         else:
@@ -76,4 +100,14 @@ def search_by_review(query):
     json_data2 = r2.json()
     doc2 = json_data2["response"]["docs"]
 
-    return doc2
+    ranked_doc = []
+
+    ##as the doc2 returns document not in the ranking order of ID_list, we need to sort it by rank
+    for x in ID_list:
+        for y in doc2:
+            if(y["ID"][0] == x):
+                ranked_doc.append(y)
+
+    doc_with_reviews = zip(ranked_doc,review_list)
+
+    return doc_with_reviews

@@ -38,7 +38,7 @@ def info(request):
             query = request.GET.get('RestaurantID', None)
             print("helllpooo ur query is "+query)
             #url = "http://localhost:8983/solr/reviews/select?q=RestaurantID%3A" + query +"&rows=10"
-            url = "http://localhost:8983/solr/reviews/select?q=RestaurantID%3A" + query
+            url = "http://localhost:8983/solr/reviews/select?q=RestaurantID%3A" + query + "&rows=100"
             print(url)
             r = requests.get(url)
             json_data = r.json()
