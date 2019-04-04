@@ -25,7 +25,7 @@
             {{x.0.Type | cut:"['" | cut:"']" }}
             {{x.0.Number | cut:"['" | cut:"']"}}</p>
           <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</p>
-          <p> image </p>
+          <img class="card-img pb-2 text-center" src="{{ x.0.Image | cut:"['" | cut:"']" }}" style="border-radius:50%">
         </li>
       {% endfor %}
     </ul>
