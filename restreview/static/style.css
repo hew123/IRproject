@@ -22,15 +22,3 @@ p:hover{
 
 .row{
   background-color: green;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-div:after {
-      content: "";
-      clear: both;
-      display: table;
-  }
