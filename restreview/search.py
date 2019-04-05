@@ -18,7 +18,7 @@ def search_by_restaurant(query):
         url += "%20%7C%7C%20Number%3A" + x
         url += "%20%7C%7C%20Type%3A" + x
 
-    url = url + "&rows=10"
+    url = url + "&rows=100"
 
     #http://localhost:8983/solr/restaurants/select?q=Restaurant%3Aupstate%20%7C%7C%20Type%3Aseafood%20%7C%7C%20Restaurant%3ABurger
 
@@ -93,7 +93,7 @@ def search_by_review(query):
         else:
             url2 += "%20%7C%7C%20ID%3A"+ str(x)
 
-    url2 += "&rows=10"
+    url2 += "&rows=100"
 
     print(url2)
     r2 = requests.get(url2)
