@@ -47,7 +47,11 @@
       </div>
         </li>
         {% empty %}
-        <h1> No relevant restaurant found </h1>
+        <div class="jumbotron" style="text-align: center; background-color:white;">
+          <div class="container">
+            <img src="{% static 'cantfind.png' %}" height="82" width="82"</img>
+            <p>No relevant restaurants found</p>
+          </div>
       {% endfor %}
     </ul>
   </div>
