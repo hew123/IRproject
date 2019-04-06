@@ -1,0 +1,508 @@
+2019-04-05 02:35:55.707 INFO  (main) [   ] o.e.j.u.log Logging initialized @4109ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-04-05 02:35:55.859 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-04-05 02:35:55.869 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 11.0.2+9-LTS
+2019-04-05 02:35:55.890 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/server/contexts/] at interval 0
+2019-04-05 02:36:00.995 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-04-05 02:36:01.012 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-04-05 02:36:01.012 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-04-05 02:36:01.015 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2019-04-05 02:36:01.085 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-04-05 02:36:01.122 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-04-05 02:36:01.128 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.0.0
+2019-04-05 02:36:01.129 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-04-05 02:36:01.129 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3
+2019-04-05 02:36:01.129 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-04-05T02:36:01.129348200Z
+2019-04-05 02:36:01.187 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr
+2019-04-05 02:36:01.196 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\solr.xml
+2019-04-05 02:36:01.294 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@55c53a33, but no JMX reporters were configured - adding default JMX reporter.
+2019-04-05 02:36:01.547 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-04-05 02:36:01.797 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@7bb35cc6[provider=null,keyStore=null,trustStore=null]
+2019-04-05 02:36:01.889 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@387bf2d9[provider=null,keyStore=null,trustStore=null]
+2019-04-05 02:36:02.042 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-04-05 02:36:02.043 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-04-05 02:36:02.119 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@55c53a33
+2019-04-05 02:36:02.119 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@55c53a33
+2019-04-05 02:36:02.124 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@55c53a33
+2019-04-05 02:36:02.177 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr
+2019-04-05 02:36:02.177 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [restaurants, reviews]
+2019-04-05 02:36:02.269 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.c.SolrResourceLoader [restaurants] Added 59 libs to classloader, from paths: [/C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/clustering/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/extraction/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/langid/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/velocity/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/dist]
+2019-04-05 02:36:02.269 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.c.SolrResourceLoader [reviews] Added 59 libs to classloader, from paths: [/C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/clustering/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/extraction/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/langid/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/contrib/velocity/lib, /C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/dist]
+2019-04-05 02:36:02.597 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@f9879ac{/solr,file:///C:/Users/xJAYD/OneDrive/Documents/GitHub/IRproject/solr-8.0.0%203/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server/solr-webapp/webapp}
+2019-04-05 02:36:02.604 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@6540cf1d{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-04-05 02:36:02.604 INFO  (main) [   ] o.e.j.s.Server Started @11009ms
+2019-04-05 02:36:02.789 INFO  (qtp1363396194-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=46
+2019-04-05 02:36:06.436 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2019-04-05 02:36:06.439 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2019-04-05 02:36:06.618 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.s.IndexSchema [reviews] Schema name=default-config
+2019-04-05 02:36:06.622 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.s.IndexSchema [restaurants] Schema name=default-config
+2019-04-05 02:36:07.365 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-05 02:36:07.365 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-05 02:36:07.410 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.c.CoreContainer Creating SolrCore 'reviews' using configuration from instancedir C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\reviews, trusted=true
+2019-04-05 02:36:07.410 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.c.CoreContainer Creating SolrCore 'restaurants' using configuration from instancedir C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\restaurants, trusted=true
+2019-04-05 02:36:07.426 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.reviews' (registry 'solr.core.reviews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@55c53a33
+2019-04-05 02:36:07.426 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.restaurants' (registry 'solr.core.restaurants') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@55c53a33
+2019-04-05 02:36:07.449 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.c.SolrCore [[restaurants] ] Opening new SolrCore at [C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\restaurants], dataDir=[C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\restaurants\data\]
+2019-04-05 02:36:07.449 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.c.SolrCore [[reviews] ] Opening new SolrCore at [C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\reviews], dataDir=[C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\reviews\data\]
+2019-04-05 02:36:07.497 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-05 02:36:07.497 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-05 02:36:08.198 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-05 02:36:08.198 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-05 02:36:08.198 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-05 02:36:08.198 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-05 02:36:08.236 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-05 02:36:08.236 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-05 02:36:08.236 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-05 02:36:08.236 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-05 02:36:08.442 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c527c2a[reviews] main]
+2019-04-05 02:36:08.457 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\reviews\conf
+2019-04-05 02:36:08.459 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.s.SolrIndexSearcher Opening [Searcher@3a0ac0b3[restaurants] main]
+2019-04-05 02:36:08.460 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\xJAYD\OneDrive\Documents\GitHub\IRproject\solr-8.0.0 3\server\solr\restaurants\conf
+2019-04-05 02:36:08.487 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-05 02:36:08.487 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-05 02:36:08.495 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-05 02:36:08.495 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-05 02:36:08.517 INFO  (coreLoadExecutor-9-thread-2) [   x:reviews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-05 02:36:08.517 INFO  (coreLoadExecutor-9-thread-1) [   x:restaurants] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-05 02:36:08.541 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3a0ac0b3[restaurants] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C100:[diagnostics={java.runtime.version=10.0.1+10, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1554092669142}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-05 02:36:08.542 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-05 02:36:08.542 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-05 02:36:08.544 INFO  (searcherExecutor-11-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c527c2a[reviews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C6138:[diagnostics={java.runtime.version=10.0.1+10, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1553602273331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-05 02:36:08.544 INFO  (searcherExecutor-11-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-05 02:36:08.545 INFO  (searcherExecutor-11-thread-1-processing-x:reviews) [   x:reviews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-05 02:36:08.549 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.SolrCore [restaurants] Registered new searcher Searcher@3a0ac0b3[restaurants] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C100:[diagnostics={java.runtime.version=10.0.1+10, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1554092669142}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-05 02:36:08.549 INFO  (searcherExecutor-11-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.SolrCore [reviews] Registered new searcher Searcher@1c527c2a[reviews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C6138:[diagnostics={java.runtime.version=10.0.1+10, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1553602273331}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-05 02:36:21.672 INFO  (qtp1363396194-19) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:burger+||+Price:burger+||+Number:burger+||+Type:burger&rows=10} hits=1 status=0 QTime=42
+2019-04-05 02:36:21.706 INFO  (qtp1363396194-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=13
+2019-04-05 02:36:34.712 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:valentine} hits=1 status=0 QTime=21
+2019-04-05 02:36:34.718 INFO  (qtp1363396194-24) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:2&rows=10} hits=1 status=0 QTime=1
+2019-04-05 02:36:42.280 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:valentine's} hits=13 status=0 QTime=1
+2019-04-05 02:36:42.299 INFO  (qtp1363396194-25) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:26+||+ID:40+||+ID:10+||+ID:25+||+ID:48+||+ID:49+||+ID:2+||+ID:16&rows=10} hits=8 status=0 QTime=2
+2019-04-05 02:37:03.277 INFO  (qtp1363396194-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=1
+2019-04-05 02:37:03.330 INFO  (qtp1363396194-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=53
+2019-04-05 02:37:03.377 INFO  (qtp1363396194-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=43
+2019-04-05 02:37:05.696 INFO  (qtp1363396194-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 02:37:05.732 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554431825689} status=0 QTime=27
+2019-04-05 02:37:05.733 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554431823109&ts=1554431823109} status=503 QTime=1
+2019-04-05 02:37:05.735 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/replication params={wt=json&command=details&_=1554431825690} status=0 QTime=29
+2019-04-05 02:37:05.786 INFO  (qtp1363396194-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=89
+2019-04-05 02:37:05.786 INFO  (qtp1363396194-25) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/system params={wt=json&_=1554431825689} status=0 QTime=54
+2019-04-05 02:37:07.549 INFO  (qtp1363396194-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 02:37:07.593 INFO  (qtp1363396194-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=43
+2019-04-05 02:37:10.732 INFO  (qtp1363396194-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 02:37:10.741 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=6
+2019-04-05 02:37:10.785 INFO  (qtp1363396194-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=52
+2019-04-05 02:38:35.824 INFO  (qtp1363396194-24) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:26&rows=100} hits=133 status=0 QTime=1
+2019-04-05 03:01:12.329 ERROR (qtp1363396194-44) [   x:restaurants] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'Restaurant:Reviews:"yummy" || Price:Reviews:"yummy" || Number:Reviews:"yummy" || Type:Reviews:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Reviews:"seafood" || Price:Reviews:"seafood" || Number:Reviews:"seafood" || Type:Reviews:"seafood" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Rating:"yummy" || Price:Rating:"yummy" || Number:Rating:"yummy" || Type:Rating:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Rating:"seafood" || Price:Rating:"seafood" || Number:Rating:"seafood" || Type:Rating:"seafood" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Restaurant:"yummy" || Price:Restaurant:"yummy" || Number:Restaurant:"yummy" || Type:Restaurant:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Restaurant:"seafood" || Price:Restaurant:"seafood" || Number:Restaurant:"seafood" || Type:Restaurant:"seafood" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Type:"yummy" || Price:Type:"yummy" || Number:Type:"yummy" || Type:Type:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Type:"seafood" || Price:Type:"seafood" || Number:Type:"seafood" || Type:Type:"seafood"': Encountered " ":" ": "" at line 1, column 18.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2559)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:394)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:340)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'Restaurant:Reviews:"yummy" || Price:Reviews:"yummy" || Number:Reviews:"yummy" || Type:Reviews:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Reviews:"seafood" || Price:Reviews:"seafood" || Number:Reviews:"seafood" || Type:Reviews:"seafood" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Rating:"yummy" || Price:Rating:"yummy" || Number:Rating:"yummy" || Type:Rating:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Rating:"seafood" || Price:Rating:"seafood" || Number:Rating:"seafood" || Type:Rating:"seafood" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Restaurant:"yummy" || Price:Restaurant:"yummy" || Number:Restaurant:"yummy" || Type:Restaurant:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Restaurant:"seafood" || Price:Restaurant:"seafood" || Number:Restaurant:"seafood" || Type:Restaurant:"seafood" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Type:"yummy" || Price:Type:"yummy" || Number:Type:"yummy" || Type:Type:"yummy" || Restaurant:OR || Price:OR || Number:OR || Type:OR || Restaurant:Type:"seafood" || Price:Type:"seafood" || Number:Type:"seafood" || Type:Type:"seafood"': Encountered " ":" ": "" at line 1, column 18.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:158)
+	... 36 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 18.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 39 more
+
+2019-04-05 03:01:12.330 INFO  (qtp1363396194-44) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:Reviews:"yummy"+||+Price:Reviews:"yummy"+||+Number:Reviews:"yummy"+||+Type:Reviews:"yummy"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Reviews:"seafood"+||+Price:Reviews:"seafood"+||+Number:Reviews:"seafood"+||+Type:Reviews:"seafood"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Rating:"yummy"+||+Price:Rating:"yummy"+||+Number:Rating:"yummy"+||+Type:Rating:"yummy"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Rating:"seafood"+||+Price:Rating:"seafood"+||+Number:Rating:"seafood"+||+Type:Rating:"seafood"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Restaurant:"yummy"+||+Price:Restaurant:"yummy"+||+Number:Restaurant:"yummy"+||+Type:Restaurant:"yummy"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Restaurant:"seafood"+||+Price:Restaurant:"seafood"+||+Number:Restaurant:"seafood"+||+Type:Restaurant:"seafood"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Type:"yummy"+||+Price:Type:"yummy"+||+Number:Type:"yummy"+||+Type:Type:"yummy"+||+Restaurant:OR+||+Price:OR+||+Number:OR+||+Type:OR+||+Restaurant:Type:"seafood"+||+Price:Type:"seafood"+||+Number:Type:"seafood"+||+Type:Type:"seafood"&rows=10} status=400 QTime=6
+2019-04-05 03:01:25.043 INFO  (qtp1363396194-19) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:yummy+||+Price:yummy+||+Number:yummy+||+Type:yummy+||+Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood&rows=10} hits=8 status=0 QTime=1
+2019-04-05 03:01:25.050 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:01:25.060 INFO  (qtp1363396194-24) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:01:25.067 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:01:25.073 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:01:25.082 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=1
+2019-04-05 03:01:25.088 INFO  (qtp1363396194-24) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:01:25.093 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 03:01:25.100 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:01:51.452 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=100} hits=0 status=0 QTime=0
+2019-04-05 03:05:45.157 INFO  (qtp1363396194-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:05:45.165 INFO  (qtp1363396194-24) [   x:reviews] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2019-04-05 03:05:45.167 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=2
+2019-04-05 03:05:45.190 INFO  (qtp1363396194-24) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=valentine&analysis.showmatch=true&verbose_output=1&analysis.query=valentine's&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=25
+2019-04-05 03:05:45.218 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=59
+2019-04-05 03:05:46.472 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:05:46.478 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=2
+2019-04-05 03:05:46.479 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=valentine&analysis.showmatch=true&verbose_output=0&analysis.query=valentine's&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=2
+2019-04-05 03:05:46.518 INFO  (qtp1363396194-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=46
+2019-04-05 03:06:15.731 INFO  (qtp1363396194-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:06:15.745 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/segments params={wt=json&_=1554433575726} status=0 QTime=12
+2019-04-05 03:06:15.781 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=48
+2019-04-05 03:06:16.138 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:06:16.144 INFO  (qtp1363396194-24) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=2
+2019-04-05 03:06:16.148 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/config params={wt=json&_=1554433576116} status=0 QTime=5
+2019-04-05 03:06:16.190 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=51
+2019-04-05 03:06:16.225 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554431825689} status=0 QTime=4
+2019-04-05 03:09:13.599 INFO  (qtp1363396194-44) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:burger+||+Price:burger+||+Number:burger+||+Type:burger&rows=10} hits=1 status=0 QTime=0
+2019-04-05 03:09:13.606 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:09:19.540 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:yum} hits=103 status=0 QTime=1
+2019-04-05 03:09:19.553 INFO  (qtp1363396194-16) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:5+||+ID:23+||+ID:45+||+ID:51+||+ID:26+||+ID:49+||+ID:50+||+ID:42+||+ID:37+||+ID:47&rows=10} hits=10 status=0 QTime=1
+2019-04-05 03:10:45.597 INFO  (qtp1363396194-44) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood&rows=10} hits=8 status=0 QTime=1
+2019-04-05 03:10:45.602 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:10:45.609 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:10:45.615 INFO  (qtp1363396194-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:10:45.621 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:10:45.627 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:10:45.632 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:10:45.637 INFO  (qtp1363396194-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 03:10:45.642 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:11:41.270 INFO  (qtp1363396194-49) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:5.0+||+Price:5.0+||+Number:5.0+||+Type:5.0&rows=10} hits=0 status=0 QTime=1
+2019-04-05 03:11:43.879 INFO  (qtp1363396194-19) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:5+||+Price:5+||+Number:5+||+Type:5&rows=10} hits=0 status=0 QTime=1
+2019-04-05 03:11:50.143 INFO  (qtp1363396194-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:11:50.150 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:11:50.201 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=55
+2019-04-05 03:11:50.645 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:11:50.649 INFO  (qtp1363396194-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/file params={wt=json&_=1554433910639} status=0 QTime=1
+2019-04-05 03:11:50.688 INFO  (qtp1363396194-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1554433910639} status=0 QTime=5
+2019-04-05 03:11:50.711 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=65
+2019-04-05 03:11:51.773 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:11:51.780 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1554433911758} status=0 QTime=3
+2019-04-05 03:11:51.824 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:11:51.832 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=58
+2019-04-05 03:11:51.832 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1554433911758} status=0 QTime=0
+2019-04-05 03:11:51.892 INFO  (qtp1363396194-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=56
+2019-04-05 03:11:52.309 INFO  (qtp1363396194-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:11:52.314 INFO  (qtp1363396194-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:11:52.352 INFO  (qtp1363396194-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=41
+2019-04-05 03:12:10.716 INFO  (qtp1363396194-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:12:10.719 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:12:10.725 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=5.0+star+rating&analysis.showmatch=true&verbose_output=0&analysis.query=5&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=4
+2019-04-05 03:12:10.763 INFO  (qtp1363396194-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=46
+2019-04-05 03:12:19.815 INFO  (qtp1363396194-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:12:19.819 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:12:19.823 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=5.0+star+rating&analysis.showmatch=true&verbose_output=0&analysis.query=5.0&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=2
+2019-04-05 03:12:19.861 INFO  (qtp1363396194-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=44
+2019-04-05 03:12:38.547 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:12:38.550 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:12:38.555 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=5.0+star+rating&analysis.showmatch=true&verbose_output=0&analysis.query=5&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=2
+2019-04-05 03:12:38.594 INFO  (qtp1363396194-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=47
+2019-04-05 03:12:56.344 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:12:56.390 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=44
+2019-04-05 03:12:56.426 INFO  (qtp1363396194-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=33
+2019-04-05 03:12:57.163 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:12:57.171 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:12:57.172 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=5.0+star+rating&analysis.showmatch=true&verbose_output=0&analysis.query=5&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=1
+2019-04-05 03:12:57.217 INFO  (qtp1363396194-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=52
+2019-04-05 03:13:06.716 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:13:06.722 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=2
+2019-04-05 03:13:06.723 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=$$$&analysis.showmatch=true&verbose_output=0&analysis.query=5&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=2
+2019-04-05 03:13:06.765 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=48
+2019-04-05 03:13:10.511 INFO  (qtp1363396194-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:13:10.516 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=0
+2019-04-05 03:13:10.516 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=$$$&analysis.showmatch=true&verbose_output=0&analysis.query=$&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=0
+2019-04-05 03:13:10.559 INFO  (qtp1363396194-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=46
+2019-04-05 03:14:17.091 INFO  (qtp1363396194-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:14:17.095 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=1
+2019-04-05 03:14:17.098 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=5.0+star+rating&analysis.showmatch=true&verbose_output=0&analysis.query=5.0&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=1
+2019-04-05 03:14:17.139 INFO  (qtp1363396194-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=46
+2019-04-05 03:14:27.591 INFO  (qtp1363396194-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:14:27.595 INFO  (qtp1363396194-48) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554431825689} status=0 QTime=2
+2019-04-05 03:14:27.600 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=4.5+star+rating&analysis.showmatch=true&verbose_output=0&analysis.query=4.5&wt=json&_=1554431830723&analysis.fieldtype=text_en} status=0 QTime=2
+2019-04-05 03:14:27.638 INFO  (qtp1363396194-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=47
+2019-04-05 03:17:48.868 INFO  (qtp1363396194-20) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood&rows=10} hits=8 status=0 QTime=1
+2019-04-05 03:17:48.874 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:17:48.879 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:17:48.884 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:17:48.891 INFO  (qtp1363396194-20) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:17:48.895 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:17:48.900 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:17:48.904 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 03:17:48.909 INFO  (qtp1363396194-20) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:22:42.122 INFO  (qtp1363396194-19) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:Ippudo+||+Price:Ippudo+||+Number:Ippudo+||+Type:Ippudo+||+Restaurant:NY+||+Price:NY+||+Number:NY+||+Type:NY&rows=10} hits=2 status=0 QTime=2
+2019-04-05 03:22:42.128 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:29&rows=10} hits=133 status=0 QTime=0
+2019-04-05 03:22:42.137 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:43&rows=10} hits=109 status=0 QTime=0
+2019-04-05 03:27:00.854 INFO  (qtp1363396194-19) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:cheap+||+Price:cheap+||+Number:cheap+||+Type:cheap+||+Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood&rows=10} hits=8 status=0 QTime=2
+2019-04-05 03:27:00.859 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:27:00.864 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:27:00.869 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:27:00.875 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:27:00.880 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:27:00.885 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:27:00.889 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 03:27:00.894 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:27:08.095 INFO  (qtp1363396194-44) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:cheap+||+Price:cheap+||+Number:cheap+||+Type:cheap&rows=10} hits=0 status=0 QTime=1
+2019-04-05 03:27:26.184 INFO  (qtp1363396194-18) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:cheap+||+Price:cheap+||+Number:cheap+||+Type:cheap&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:28:23.147 INFO  (qtp1363396194-49) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:cheap+||+Price:cheap+||+Number:cheap+||+Type:cheap+||+Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood+||+Restaurant:short+||+Price:short+||+Number:short+||+Type:short+||+Restaurant:queue+||+Price:queue+||+Number:queue+||+Type:queue&rows=10} hits=8 status=0 QTime=2
+2019-04-05 03:28:23.152 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:28:23.157 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:28:23.163 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:28:23.170 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:28:23.174 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:28:23.178 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:28:23.184 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 03:28:23.189 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:28:41.634 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:cheap+||+Reviews:seafood+||+Reviews:short+||+Reviews:queue} hits=624 status=0 QTime=7
+2019-04-05 03:28:41.645 INFO  (qtp1363396194-44) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:3+||+ID:1+||+ID:29+||+ID:35+||+ID:44+||+ID:42+||+ID:18+||+ID:27&rows=10} hits=8 status=0 QTime=1
+2019-04-05 03:29:08.791 INFO  (qtp1363396194-18) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:cheap+||+Price:cheap+||+Number:cheap+||+Type:cheap+||+Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood+||+Restaurant:good+||+Price:good+||+Number:good+||+Type:good+||+Restaurant:service+||+Price:service+||+Number:service+||+Type:service&rows=10} hits=8 status=0 QTime=2
+2019-04-05 03:29:08.796 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:29:08.801 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:29:08.809 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:29:08.814 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 03:29:08.820 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:29:08.825 INFO  (qtp1363396194-22) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:29:08.830 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 03:29:08.836 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:29:17.921 INFO  (qtp1363396194-49) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:cheap+||+Reviews:seafood+||+Reviews:good+||+Reviews:service} hits=3872 status=0 QTime=4
+2019-04-05 03:29:17.931 INFO  (qtp1363396194-22) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:3+||+ID:42+||+ID:45+||+ID:57+||+ID:12+||+ID:1&rows=10} hits=6 status=0 QTime=1
+2019-04-05 03:31:28.488 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:42&rows=100} hits=65 status=0 QTime=1
+2019-04-05 03:39:08.678 INFO  (qtp1363396194-52) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:5.0} hits=1 status=0 QTime=3
+2019-04-05 03:39:08.686 INFO  (qtp1363396194-49) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:42&rows=10} hits=1 status=0 QTime=0
+2019-04-05 03:39:16.805 INFO  (qtp1363396194-22) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:1.0+||+Price:1.0+||+Number:1.0+||+Type:1.0&rows=10} hits=0 status=0 QTime=2
+2019-04-05 03:39:19.294 INFO  (qtp1363396194-20) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:2.0+||+Price:2.0+||+Number:2.0+||+Type:2.0&rows=10} hits=0 status=0 QTime=1
+2019-04-05 03:39:21.794 INFO  (qtp1363396194-51) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:3.0+||+Price:3.0+||+Number:3.0+||+Type:3.0&rows=10} hits=0 status=0 QTime=2
+2019-04-05 03:39:24.581 INFO  (qtp1363396194-49) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:4.0+||+Price:4.0+||+Number:4.0+||+Type:4.0&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:39:26.943 INFO  (qtp1363396194-22) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:5.0+||+Price:5.0+||+Number:5.0+||+Type:5.0&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:39:36.945 INFO  (qtp1363396194-20) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:5.0} hits=1 status=0 QTime=0
+2019-04-05 03:39:36.950 INFO  (qtp1363396194-51) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:42&rows=10} hits=1 status=0 QTime=0
+2019-04-05 03:41:08.871 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:cheap+||+Reviews:seafood+||+Reviews:good+||+Reviews:service} hits=3872 status=0 QTime=0
+2019-04-05 03:41:08.878 INFO  (qtp1363396194-22) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:3+||+ID:42+||+ID:45+||+ID:57+||+ID:12+||+ID:1&rows=10} hits=6 status=0 QTime=0
+2019-04-05 03:41:24.967 INFO  (qtp1363396194-20) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:amazing+||+Reviews:seafood+||+Reviews:reasonable+||+Reviews:price} hits=1794 status=0 QTime=4
+2019-04-05 03:41:24.977 INFO  (qtp1363396194-51) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=ID:3+||+ID:32+||+ID:8+||+ID:1+||+ID:31+||+ID:59+||+ID:18+||+ID:4+||+ID:11&rows=10} hits=9 status=0 QTime=1
+2019-04-05 03:42:06.318 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=100} hits=114 status=0 QTime=1
+2019-04-05 03:43:12.418 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=100} hits=114 status=0 QTime=0
+2019-04-05 03:46:18.791 INFO  (qtp1363396194-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554431823109} status=0 QTime=0
+2019-04-05 03:46:18.845 INFO  (qtp1363396194-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554431823109} status=0 QTime=53
+2019-04-05 03:46:25.767 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=valentine's&_=1554431827517} hits=0 status=0 QTime=1
+2019-04-05 03:46:29.978 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=valentine's&df=Reviews&_=1554431827517} hits=13 status=0 QTime=0
+2019-04-05 03:50:15.983 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=valentine's+day+happy&df=Reviews&_=1554431827517} hits=876 status=0 QTime=5
+2019-04-05 03:51:31.723 INFO  (qtp1363396194-52) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=valentine's+day+happy&df=Reviews&_=1554431827517} hits=876 status=0 QTime=0
+2019-04-05 03:51:54.235 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=valentine's+day+happy&df=Reviews&rows=1000&_=1554431827517} hits=876 status=0 QTime=2
+2019-04-05 03:52:11.080 INFO  (qtp1363396194-52) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=the&df=Reviews&rows=1000&_=1554431827517} hits=0 status=0 QTime=1
+2019-04-05 03:52:18.402 INFO  (qtp1363396194-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=good&df=Reviews&rows=1000&_=1554431827517} hits=2741 status=0 QTime=1
+2019-04-05 03:56:04.759 INFO  (qtp1363396194-20) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:5.0+||+Price:5.0+||+Number:5.0+||+Type:5.0&rows=10} hits=0 status=0 QTime=0
+2019-04-05 03:56:11.782 INFO  (qtp1363396194-21) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:5.0+||+Price:5.0+||+Number:5.0+||+Type:5.0&rows=10} hits=0 status=0 QTime=0
+2019-04-05 04:01:15.829 ERROR (qtp1363396194-51) [   x:reviews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Type
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1303)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:441)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:535)
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:816)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:158)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2559)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:394)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:340)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2019-04-05 04:01:15.830 INFO  (qtp1363396194-51) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Type:"Seafood"&_=1554431827517} status=400 QTime=2
+2019-04-05 04:01:25.063 ERROR (qtp1363396194-19) [   x:reviews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Type
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1303)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:441)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:535)
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:816)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:158)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2559)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:394)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:340)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2019-04-05 04:01:25.063 INFO  (qtp1363396194-19) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Type:"seafood"&_=1554431827517} status=400 QTime=1
+2019-04-05 06:57:17.258 INFO  (qtp1363396194-18) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/select params={q=Restaurant:seafood+||+Price:seafood+||+Number:seafood+||+Type:seafood&rows=10} hits=8 status=0 QTime=1
+2019-04-05 06:57:17.268 INFO  (qtp1363396194-20) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:2&rows=10} hits=114 status=0 QTime=1
+2019-04-05 06:57:17.275 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:3&rows=10} hits=114 status=0 QTime=0
+2019-04-05 06:57:17.281 INFO  (qtp1363396194-54) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:5&rows=10} hits=114 status=0 QTime=0
+2019-04-05 06:57:17.289 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:18&rows=10} hits=114 status=0 QTime=0
+2019-04-05 06:57:17.295 INFO  (qtp1363396194-20) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:63&rows=10} hits=0 status=0 QTime=0
+2019-04-05 06:57:17.301 INFO  (qtp1363396194-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:95&rows=10} hits=0 status=0 QTime=0
+2019-04-05 06:57:17.306 INFO  (qtp1363396194-54) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:19&rows=10} hits=40 status=0 QTime=0
+2019-04-05 06:57:17.313 INFO  (qtp1363396194-44) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=RestaurantID:72&rows=10} hits=0 status=0 QTime=0

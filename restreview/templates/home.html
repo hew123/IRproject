@@ -2,17 +2,22 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <h1 style="text-align:center; margin-top:100px; font-style: oblique"> Welcome to Restaurant Review.com </h1>
-    <link rel="stylesheet" type="text/css" href="mycss.css">
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
 
 <body>
-<form type="get" action="/result/" style="text-align:center;margin-top:100px">
+    <form type="get" action="/result/" style="text-align:center;margin-top:100px">
 
-    <input  id="search_bar" type="text" name="search_bar" style="height:30px; width:400px; margin-right:20px; font-size:15px">
-    <button id="submit" type="submit" style="height:20px; width:60px">Search</button>
-    <br><br><input type="checkbox" name="checkbox">search by review
-</form>
+        <div class="container">
+            <input class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
+            <br />
+            <button class="btn btn-primary" id="submit" type="submit">Search</button>
+        </div>
+
+        <!--<input id="search_bar" type="text" name="search_bar" style="height:30px; width:400px; margin-right:20px; font-size:15px">-->
+        <br><br><input type="checkbox" name="checkbox">Search by Reviews instead
+    </form>
 </body>
 </html>
