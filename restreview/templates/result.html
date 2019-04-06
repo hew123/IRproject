@@ -4,6 +4,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
 </head>
@@ -36,13 +37,13 @@
         <li>
           <div class="row" style="clear:left;">
           <div style="width:15%;float:left">
-            <img src="{{x.0.Image| cut:"['" | cut:"']"}}" style="width:200px;height:200px">
+            <img src="{{x.0.Image| cut:"['" | cut:"']"}}" style="width:220px;height:220px">
           </div>
           <div style="margin-left:20%;">
           <p> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}" style="font-size:20px">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></p>
-            <p>{{x.0.Price | cut:"['" | cut:"']"}}
-            {{x.0.Type | cut:"['" | cut:"']" }}
-            {{x.0.Number | cut:"['" | cut:"']"}}</p>
+            <span <i class="fas fa-file-invoice-dollar"></i>  {{x.0.Price | cut:"['" | cut:"']"}}</span><br>
+            <span <i class="fas fa-tag"></i> {{x.0.Type | cut:"['" | cut:"']" }}</span><br>
+            <span <i class="far fa-star"></i><b> {{x.0.Number | cut:"['" | cut:"']"}}</b></span>
           <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:auto;">{{x.1}}</p>
           <br><br>
         </div>
@@ -52,7 +53,7 @@
         <div class="jumbotron" style="text-align: center; background-color:white;">
           <div class="container">
             <img src="{% static 'cantfind.png' %}" height="82" width="82"</img>
-            <p>No relevant restaurants found</p>
+            <p>No relevant restaurant found</p>
           </div>
       {% endfor %}
     </ul>
