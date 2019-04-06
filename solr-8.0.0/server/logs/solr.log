@@ -1,0 +1,282 @@
+2019-04-06 05:57:38.416 INFO  (main) [   ] o.e.j.u.log Logging initialized @2688ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-04-06 05:57:38.884 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-04-06 05:57:38.912 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 10.0.1+10
+2019-04-06 05:57:38.978 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/server/contexts/] at interval 0
+2019-04-06 05:57:39.727 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-04-06 05:57:39.758 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-04-06 05:57:39.758 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-04-06 05:57:39.766 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-04-06 05:57:39.910 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-04-06 05:57:40.003 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-04-06 05:57:40.012 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.0.0
+2019-04-06 05:57:40.013 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-04-06 05:57:40.013 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0
+2019-04-06 05:57:40.014 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-04-06T05:57:40.014163Z
+2019-04-06 05:57:40.164 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr
+2019-04-06 05:57:40.186 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/solr.xml
+2019-04-06 05:57:40.394 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@4a3631f8, but no JMX reporters were configured - adding default JMX reporter.
+2019-04-06 05:57:41.187 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-04-06 05:57:41.806 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@4f82663e[provider=null,keyStore=null,trustStore=null]
+2019-04-06 05:57:42.092 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@7ee3d262[provider=null,keyStore=null,trustStore=null]
+2019-04-06 05:57:42.456 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-04-06 05:57:42.458 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-04-06 05:57:42.613 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4a3631f8
+2019-04-06 05:57:42.614 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4a3631f8
+2019-04-06 05:57:42.626 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4a3631f8
+2019-04-06 05:57:42.742 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr
+2019-04-06 05:57:42.875 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@72f46e16{/solr,file:///Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr-webapp/webapp}
+2019-04-06 05:57:42.897 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@3cd9aa64{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-04-06 05:57:42.898 INFO  (main) [   ] o.e.j.s.Server Started @7179ms
+2019-04-06 05:57:53.958 INFO  (qtp323823279-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530273553} status=0 QTime=89
+2019-04-06 05:57:54.049 INFO  (qtp323823279-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530273554} status=0 QTime=178
+2019-04-06 05:57:54.076 INFO  (qtp323823279-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530273554} status=0 QTime=19
+2019-04-06 05:58:15.165 INFO  (qtp323823279-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=26
+2019-04-06 05:58:15.212 INFO  (qtp323823279-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=19
+2019-04-06 05:58:15.232 INFO  (qtp323823279-22) [   x:restaurants] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=restaurants&action=STATUS&wt=json} status=0 QTime=0
+2019-04-06 05:58:15.328 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.h.a.CoreAdminOperation core create command name=restaurants&action=CREATE&instanceDir=restaurants&wt=json
+2019-04-06 05:58:15.406 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.SolrResourceLoader [restaurants] Added 59 libs to classloader, from paths: [/Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/clustering/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/extraction/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/langid/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/velocity/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/dist]
+2019-04-06 05:58:15.987 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2019-04-06 05:58:16.315 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.s.IndexSchema [restaurants] Schema name=default-config
+2019-04-06 05:58:17.661 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-06 05:58:17.722 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.CoreContainer Creating SolrCore 'restaurants' using configuration from instancedir /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants, trusted=true
+2019-04-06 05:58:17.752 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.restaurants' (registry 'solr.core.restaurants') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4a3631f8
+2019-04-06 05:58:17.787 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.SolrCore [[restaurants] ] Opening new SolrCore at [/Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants], dataDir=[/Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants/data/]
+2019-04-06 05:58:18.026 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-06 05:58:19.278 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-06 05:58:19.279 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-06 05:58:19.309 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-06 05:58:19.309 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-06 05:58:19.343 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.s.SolrIndexSearcher Opening [Searcher@69ef4e38[restaurants] main]
+2019-04-06 05:58:19.373 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants/conf
+2019-04-06 05:58:19.442 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-06 05:58:19.460 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-06 05:58:19.491 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-06 05:58:19.508 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1630043163335852032
+2019-04-06 05:58:19.516 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@69ef4e38[restaurants] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-04-06 05:58:19.516 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-06 05:58:19.516 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-06 05:58:19.521 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=restaurants&action=CREATE&instanceDir=restaurants&wt=json} status=0 QTime=4193
+2019-04-06 05:58:19.528 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.SolrCore [restaurants] Registered new searcher Searcher@69ef4e38[restaurants] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-04-06 05:58:27.797 INFO  (qtp323823279-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=27
+2019-04-06 05:58:27.850 INFO  (qtp323823279-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=22
+2019-04-06 05:58:27.864 INFO  (qtp323823279-21) [   x:reviews] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=reviews&action=STATUS&wt=json} status=0 QTime=0
+2019-04-06 05:58:27.950 INFO  (qtp323823279-19) [   x:reviews] o.a.s.h.a.CoreAdminOperation core create command name=reviews&action=CREATE&instanceDir=reviews&wt=json
+2019-04-06 05:58:27.987 INFO  (qtp323823279-19) [   x:reviews] o.a.s.c.SolrResourceLoader [reviews] Added 59 libs to classloader, from paths: [/Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/clustering/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/extraction/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/langid/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/contrib/velocity/lib, /Users/hewhew/Desktop/IRproject%20Solr/solr-8.0.0/dist]
+2019-04-06 05:58:28.087 INFO  (qtp323823279-19) [   x:reviews] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2019-04-06 05:58:28.175 INFO  (qtp323823279-19) [   x:reviews] o.a.s.s.IndexSchema [reviews] Schema name=default-config
+2019-04-06 05:58:28.748 INFO  (qtp323823279-19) [   x:reviews] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-06 05:58:28.800 INFO  (qtp323823279-19) [   x:reviews] o.a.s.c.CoreContainer Creating SolrCore 'reviews' using configuration from instancedir /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/reviews, trusted=true
+2019-04-06 05:58:28.801 INFO  (qtp323823279-19) [   x:reviews] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.reviews' (registry 'solr.core.reviews') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@4a3631f8
+2019-04-06 05:58:28.801 INFO  (qtp323823279-19) [   x:reviews] o.a.s.c.SolrCore [[reviews] ] Opening new SolrCore at [/Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/reviews], dataDir=[/Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/reviews/data/]
+2019-04-06 05:58:28.860 INFO  (qtp323823279-19) [   x:reviews] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-06 05:58:28.999 INFO  (qtp323823279-19) [   x:reviews] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-06 05:58:29.000 INFO  (qtp323823279-19) [   x:reviews] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-06 05:58:29.005 INFO  (qtp323823279-19) [   x:reviews] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-06 05:58:29.006 INFO  (qtp323823279-19) [   x:reviews] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-06 05:58:29.035 INFO  (qtp323823279-19) [   x:reviews] o.a.s.s.SolrIndexSearcher Opening [Searcher@34c9f5d0[reviews] main]
+2019-04-06 05:58:29.036 INFO  (qtp323823279-19) [   x:reviews] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/reviews/conf
+2019-04-06 05:58:29.036 INFO  (qtp323823279-19) [   x:reviews] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-06 05:58:29.037 INFO  (qtp323823279-19) [   x:reviews] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-06 05:58:29.042 INFO  (qtp323823279-19) [   x:reviews] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-06 05:58:29.042 INFO  (qtp323823279-19) [   x:reviews] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1630043173334024192
+2019-04-06 05:58:29.045 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@34c9f5d0[reviews] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-04-06 05:58:29.045 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-06 05:58:29.045 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-06 05:58:29.058 INFO  (qtp323823279-19) [   x:reviews] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=reviews&action=CREATE&instanceDir=reviews&wt=json} status=0 QTime=1107
+2019-04-06 05:58:29.060 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.SolrCore [reviews] Registered new searcher Searcher@34c9f5d0[reviews] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-04-06 05:58:31.088 INFO  (qtp323823279-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 05:58:31.130 INFO  (qtp323823279-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=40
+2019-04-06 05:58:31.195 INFO  (qtp323823279-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=57
+2019-04-06 05:58:32.771 INFO  (qtp323823279-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 05:58:32.788 INFO  (qtp323823279-23) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554530312759} status=0 QTime=12
+2019-04-06 05:58:32.801 INFO  (qtp323823279-22) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/replication params={wt=json&command=details&_=1554530312760} status=0 QTime=21
+2019-04-06 05:58:32.803 INFO  (qtp323823279-17) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554530310998&ts=1554530310998} status=503 QTime=5
+2019-04-06 05:58:32.840 INFO  (qtp323823279-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=67
+2019-04-06 05:58:32.861 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/system params={wt=json&_=1554530312759} status=0 QTime=73
+2019-04-06 05:59:25.834 INFO  (qtp323823279-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 05:59:25.875 INFO  (qtp323823279-22) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554530312759} status=0 QTime=32
+2019-04-06 05:59:25.889 INFO  (qtp323823279-14) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/config params={wt=json&_=1554530365800} status=0 QTime=42
+2019-04-06 05:59:25.954 INFO  (qtp323823279-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=116
+2019-04-06 05:59:26.000 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554530312759} status=0 QTime=0
+2019-04-06 05:59:58.314 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants/conf/managed-schema
+2019-04-06 05:59:58.316 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/schema params={wt=json&_=1554530365799} status=0 QTime=117
+2019-04-06 05:59:59.831 INFO  (qtp323823279-14) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/config params={wt=json&_=1554530365800} status=0 QTime=1
+2019-04-06 05:59:59.832 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554530312759} status=0 QTime=5
+2019-04-06 05:59:59.880 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554530312759} status=0 QTime=0
+2019-04-06 06:01:55.673 INFO  (qtp323823279-40) [   x:restaurants] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants/conf/managed-schema
+2019-04-06 06:01:55.675 INFO  (qtp323823279-40) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/schema params={wt=json&_=1554530365799} status=0 QTime=103
+2019-04-06 06:01:57.191 INFO  (qtp323823279-23) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/config params={wt=json&_=1554530365800} status=0 QTime=1
+2019-04-06 06:01:57.192 INFO  (qtp323823279-21) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554530312759} status=0 QTime=5
+2019-04-06 06:01:57.242 INFO  (qtp323823279-43) [   x:restaurants] o.a.s.c.S.Request [restaurants]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554530312759} status=0 QTime=0
+2019-04-06 06:02:06.937 INFO  (qtp323823279-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 06:02:06.946 INFO  (qtp323823279-43) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554530312759} status=0 QTime=1
+2019-04-06 06:02:06.953 INFO  (qtp323823279-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/replication params={wt=json&command=details&_=1554530312760} status=0 QTime=1
+2019-04-06 06:02:06.958 INFO  (qtp323823279-14) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554530310998&ts=1554530310998} status=503 QTime=0
+2019-04-06 06:02:06.992 INFO  (qtp323823279-43) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/system params={wt=json&_=1554530312759} status=0 QTime=38
+2019-04-06 06:02:06.992 INFO  (qtp323823279-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=53
+2019-04-06 06:02:08.876 INFO  (qtp323823279-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 06:02:08.884 INFO  (qtp323823279-43) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554530312759} status=0 QTime=2
+2019-04-06 06:02:08.896 INFO  (qtp323823279-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/config params={wt=json&_=1554530365800} status=0 QTime=1
+2019-04-06 06:02:08.931 INFO  (qtp323823279-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=53
+2019-04-06 06:02:08.952 INFO  (qtp323823279-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554530312759} status=0 QTime=0
+2019-04-06 06:02:25.354 INFO  (qtp323823279-23) [   x:reviews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/reviews/conf/managed-schema
+2019-04-06 06:02:25.356 INFO  (qtp323823279-23) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/schema params={wt=json&_=1554530365799} status=0 QTime=79
+2019-04-06 06:02:26.875 INFO  (qtp323823279-16) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1554530312759} status=0 QTime=4
+2019-04-06 06:02:26.876 INFO  (qtp323823279-43) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/config params={wt=json&_=1554530365800} status=0 QTime=0
+2019-04-06 06:02:26.899 INFO  (qtp323823279-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1554530312759} status=0 QTime=0
+2019-04-06 06:04:47.653 INFO  (qtp323823279-23) [   x:restaurants] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/restaurants/conf/managed-schema
+2019-04-06 06:04:47.977 INFO  (qtp323823279-23) [   x:restaurants] o.a.s.u.p.LogUpdateProcessorFactory [restaurants]  webapp=/solr path=/update params={header=true}{add=[215bdeeb-bcc5-455c-b66d-543d668ac2e8 (1630043570340626432), 80377cf1-d8ff-48e1-b819-726b51d221cf (1630043570519932928), 57e48385-f46b-41a2-836e-df4a364a41b0 (1630043570522030080), bf385d28-2a8e-4930-b60c-8acf6149cdff (1630043570524127232), 494547bd-7837-4233-97a4-c1d41caf438b (1630043570526224384), 8bb0579b-6e7e-4478-aba2-a45de0bc5357 (1630043570527272960), 65d5b2d6-a470-4d25-96ec-034d0e68b642 (1630043570529370112), 0258dcb5-f05f-4c8e-87a0-5e9b8c8f4003 (1630043570531467264), 193ebab6-18b5-4b3a-a193-422a76c61ab6 (1630043570533564416), 5e0bb228-2b91-4773-914b-4dc6074cfbd7 (1630043570536710144), ... (100 adds)]} 0 564
+2019-04-06 06:04:47.989 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1630043570688753664,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-04-06 06:04:47.990 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@7f0e94f0 commitCommandVersion:1630043570688753664
+2019-04-06 06:04:48.350 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.s.SolrIndexSearcher Opening [Searcher@34c98e5f[restaurants] main]
+2019-04-06 06:04:48.352 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-04-06 06:04:48.354 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@34c98e5f[restaurants] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C100:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os.arch=x86_64, java.runtime.version=10.0.1+10, source=flush, os.version=10.14.4, timestamp=1554530688182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-06 06:04:48.354 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-06 06:04:48.367 INFO  (searcherExecutor-10-thread-1-processing-x:restaurants) [   x:restaurants] o.a.s.c.SolrCore [restaurants] Registered new searcher Searcher@34c98e5f[restaurants] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C100:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os.arch=x86_64, java.runtime.version=10.0.1+10, source=flush, os.version=10.14.4, timestamp=1554530688182}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-06 06:04:48.376 INFO  (qtp323823279-18) [   x:restaurants] o.a.s.u.p.LogUpdateProcessorFactory [restaurants]  webapp=/solr path=/update params={commit=true&header=true}{commit=} 0 388
+2019-04-06 06:05:28.993 INFO  (qtp323823279-16) [   x:reviews] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/hewhew/Desktop/IRproject Solr/solr-8.0.0/server/solr/reviews/conf/managed-schema
+2019-04-06 06:05:34.559 INFO  (qtp323823279-16) [   x:reviews] o.a.s.u.p.LogUpdateProcessorFactory [reviews]  webapp=/solr path=/update params={header=true}{add=[dd21302d-e33c-4ffa-930e-4f6e469f7967 (1630043613689806848), ae482635-2fec-4df8-a038-3df967f6c44e (1630043613709729792), 82578647-804d-4629-a5c8-dfa1dd91b444 (1630043613714972672), 05b55b84-4a12-4a62-bce8-ab5431a771de (1630043613717069824), 510a710a-16d1-4f85-b22c-473982aa62dc (1630043613718118400), fee8f75b-66f2-42ee-bfad-c4e4e23933a9 (1630043613720215552), 9c110879-cfd8-4daf-b997-04c12614aeeb (1630043613721264128), 1f3ddf62-fc33-463e-bbd1-098df4d34635 (1630043613723361280), 0e0ebf86-19fa-4233-853d-4e40b4c6625d (1630043613724409856), b45c5f17-1c66-4443-8723-e6ba43a6c0ec (1630043613726507008), ... (11458 adds)]} 0 5668
+2019-04-06 06:05:34.568 INFO  (qtp323823279-23) [   x:reviews] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1630043619530375168,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-04-06 06:05:34.568 INFO  (qtp323823279-23) [   x:reviews] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1bf86ca commitCommandVersion:1630043619530375168
+2019-04-06 06:05:35.871 INFO  (qtp323823279-23) [   x:reviews] o.a.s.s.SolrIndexSearcher Opening [Searcher@4767ccae[reviews] main]
+2019-04-06 06:05:35.874 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4767ccae[reviews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C11458:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os.arch=x86_64, java.runtime.version=10.0.1+10, source=flush, os.version=10.14.4, timestamp=1554530735747}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-06 06:05:35.874 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-06 06:05:35.876 INFO  (qtp323823279-23) [   x:reviews] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-04-06 06:05:35.882 INFO  (searcherExecutor-15-thread-1-processing-x:reviews) [   x:reviews] o.a.s.c.SolrCore [reviews] Registered new searcher Searcher@4767ccae[reviews] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C11458:[diagnostics={os=Mac OS X, java.vendor=Oracle Corporation, java.version=10.0.1, java.vm.version=10.0.1+10, lucene.version=8.0.0, os.arch=x86_64, java.runtime.version=10.0.1+10, source=flush, os.version=10.14.4, timestamp=1554530735747}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-06 06:05:35.882 INFO  (qtp323823279-23) [   x:reviews] o.a.s.u.p.LogUpdateProcessorFactory [reviews]  webapp=/solr path=/update params={commit=true&header=true}{commit=} 0 1314
+2019-04-06 06:05:55.120 INFO  (qtp323823279-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 06:05:55.132 INFO  (qtp323823279-14) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554530312759} status=0 QTime=3
+2019-04-06 06:05:55.137 INFO  (qtp323823279-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/replication params={wt=json&command=details&_=1554530312760} status=0 QTime=1
+2019-04-06 06:05:55.147 INFO  (qtp323823279-21) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554530310998&ts=1554530310998} status=503 QTime=0
+2019-04-06 06:05:55.186 INFO  (qtp323823279-14) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/admin/system params={wt=json&_=1554530312759} status=0 QTime=50
+2019-04-06 06:05:55.186 INFO  (qtp323823279-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=62
+2019-04-06 06:05:57.652 INFO  (qtp323823279-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554530310998} status=0 QTime=0
+2019-04-06 06:05:57.686 INFO  (qtp323823279-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554530310998} status=0 QTime=31
+2019-04-06 06:06:00.071 INFO  (qtp323823279-14) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=*:*&_=1554530757595} hits=11458 status=0 QTime=99
+2019-04-06 06:06:16.607 ERROR (qtp323823279-18) [   x:reviews] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '"Reviews":Valentine': Encountered " ":" ": "" at line 1, column 9.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2559)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:394)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:340)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '"Reviews":Valentine': Encountered " ":" ": "" at line 1, column 9.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:158)
+	... 41 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 9.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:132)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2019-04-06 06:06:16.609 INFO  (qtp323823279-18) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q="Reviews":Valentine&_=1554530757595} status=400 QTime=19
+2019-04-06 06:06:28.088 INFO  (qtp323823279-14) [   x:reviews] o.a.s.c.S.Request [reviews]  webapp=/solr path=/select params={q=Reviews:Valentine&_=1554530757595} hits=38 status=0 QTime=36

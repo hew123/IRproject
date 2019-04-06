@@ -26,6 +26,12 @@ def search_by_restaurant(query):
     r = requests.get(url)
     json_data = r.json()
     doc = json_data["response"]["docs"]
+    #Qtime = json_data["responseHeader"]["QTime"]
+    #numFound = json_data["response"]["numFound"]
+
+    #print("Qtime: "+ Qtime)
+    #print("numFound:" + numFound)
+
 
     review_list = []
 
@@ -40,7 +46,8 @@ def search_by_restaurant(query):
             print("doc is empty")
             first_review = ""
         else:
-            first_review = doc2[0]["Reviews"][0]
+            #first_review = doc2[0]["Reviews"][0]
+            first_review = doc2[0]["Reviews"]
             #print(first_review)
         review_list.append(first_review)
 
@@ -77,7 +84,8 @@ def search_by_review(query):
 
     for x in doc:
         a = x["RestaurantID"][0]
-        b = x["Reviews"][0]
+        #b = x["Reviews"][0]
+        b = x["Reviews"]
         if a not in ID_list:
             ID_list.append(a)
             review_list.append(b)
