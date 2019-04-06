@@ -5,7 +5,6 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-
 </head>
 
 <body>
@@ -27,8 +26,7 @@
       <input class="form-control" type="checkbox" name="checkbox">Search by Reviews instead
       </div>
     </form>
-
-
+      <h6 style="margin-top:50px"> Query time: {{Qtime}} milliseconds;  Number of documents found: {{numFound}} </h6>
       <ul style="margin:70px 0px 0px 0px; list-style-type:none">
         {% for x in doc %}
 
@@ -54,43 +52,6 @@
     </ul>
   </div>
 </div>
-
-  <!--
-  <table style="margin-left:100px; margin-top:20px; margin-right:50px">
-      <tr>
-        <th> Restaurant </th>
-        <th> Image </th>
-        <th> Price </th>
-        <th> Type </th>
-        <th> Rating </th>
-        <th style="width: 50px;height: 50px;"> Top comments </th>
-      </tr>
-      {% for x in doc %}
-      <tr>
-        <td> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></td>
-        <td> </td>
-        <td>{{x.0.Price | cut:"['" | cut:"']"}}</td>
-        <td>{{x.0.Type | cut:"['" | cut:"']" }}</td>
-        <td>{{x.0.Number | cut:"['" | cut:"']"}}</td>
-        <td style="width:200px;height:50px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</td>
-      </tr>
-      {% endfor %}
-    </table>
-  -->
-    <!--<div id="restaurant_list">
-          <ul style="list-style-type:none">
-            {% for x in doc %}
-            <li> wtffff </li>
-              <<a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a>
-              <p>{{x.0.Price | cut:"['" | cut:"']"}}</p>
-              <p>{{x.0.Type | cut:"['" | cut:"']" }}</p>
-              <p>{{x.0.Number | cut:"['" | cut:"']"}}</p>
-              <p style="width:200px;height:50px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</p>
-            </li>>
-            {% endfor %}
-          </ul>
-        </div>-->
-
 
 </body>
 </html>
