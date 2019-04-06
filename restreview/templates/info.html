@@ -25,7 +25,10 @@
       </tr>
       {% for x in doc %}
       <tr>
-        <td id="sentiments"></td>
+        <td id="sentiments"> {% if x.label.0 == 1 %} Positive
+                              {% elif x.label.0 == 0 %} Neutral
+                              {% elif x.label.0 == -1 %} Negative
+                                                            {% endif %}</td>
         <td id="rating">{{x.Rating | cut:"['" | cut:"']"}}</td>
         <td id="review" style="padding:10px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
       </tr>
