@@ -5,31 +5,37 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-  <form type="get" action="/result/" style="text-align:center;margin-top:40px; margin-bottom:50px">
-
-      <input  id="search_bar" type="text" name="search_bar" style="height:30px; width:400px; margin-right:20px; font-size:15px">
-      <button id="submit" type="submit" style="height:20px; width:60px">Search</button>
-      <br><br><input type="checkbox" name="checkbox">search by review
-
-  </form>
-
-  <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Reviews</h1>
 </head>
 
 <body>
-  <table style="margin-left:100px; margin-top:20px; margin-right:50px">
-      <tr>
-        <th> Sentiments </th>
-        <th> Rating </th>
-        <th> Comment </th>
-      </tr>
-      {% for x in doc %}
-      <tr>
-        <td id="sentiments"></td>
-        <td id="rating">{{x.Rating | cut:"['" | cut:"']"}}</td>
-        <td id="review" style="padding:10px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
-      </tr>
-      {% endfor %}
-    </table>
+    <div class="jumbotron d-flex " style="background-image: url('{% static "bg.png"%}');";>
+        <div class="container" style="background-color:white;">
+            <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Reviews</h1>
+            <form type="get" action="/result/" style="text-align:center;" class="form-inline">
+                <div class="container">
+                    <input id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" id="submit" type="submit">Search</button>
+                        <span>
+                            <br>
+                            <input class="form-control" type="checkbox" name="checkbox">Search by Reviews instead
+                </div>
+            </form>
+
+
+            <table style="margin-left:100px; margin-top:20px; margin-right:50px">
+                <tr>
+                    <th> Sentiments </th>
+                    <th> Rating </th>
+                    <th> Comment </th>
+                </tr>
+                {% for x in doc %}
+                <tr>
+                    <td id="sentiments"></td>
+                    <td id="rating">{{x.Rating | cut:"['" | cut:"']"}}</td>
+                    <td id="review" style="padding:10px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
+                </tr>
+                {% endfor %}
+            </table>
 </body>
 </html>

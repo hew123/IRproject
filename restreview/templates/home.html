@@ -8,23 +8,18 @@
 
 
 <body>
-  <div class="jumbotron d-flex justify-content-center" style="background-image: url('{% static "bg.png"%}'); height: 100vh; margin-bottom: 0px; ";>
-
-    <form class="form-control" type="get" action="/result/" style="text-align:center;height: 80vh;width:80vh;">
-        <div class="container">
-          <br><br>
-          <br><br>
-          <br>
-          <br>
-          <h1> Welcome to NYGrub </h1>
-          <br>
-            <input  id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
-            <br />
-            <button class="btn btn-primary" id="submit" type="submit">Search</button>
-        </div>
-        <!--<input type="text"  style="height:30px; width:400px; margin-right:20px; font-size:15px">-->
-        <br><br><input type="checkbox" name="checkbox">Search by Reviews instead
-    </form>
-  </div>
+    <div class="jumbotron d-flex justify-content-center" style="background-image: url('{% static "bg.png"%}'); height: 100vh; margin-bottom: 0px; ";>
+        <form class="form-control" type="get" action="/result/" style="text-align:center;height: 80vh;width:80vh;">
+            <div class="container">
+                <br><br><br><br><br><br>
+                <h1> Welcome to NYGrub </h1>
+                <br>
+                <input id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
+                <br>
+                <button class="btn btn-primary" id="submit" type="submit">Search</button>
+            </div>
+            <br><br><input type="checkbox" name="checkbox">Search by Reviews instead
+        </form>
+    </div>
 </body>
 </html>

@@ -4,58 +4,55 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 </head>
 
 <body>
-  <div class="jumbotron d-flex " style="background-image: url('{% static "bg.png"%}');";>
+    <div class="jumbotron d-flex " style="background-image: url('{% static "bg.png"%}');";>
+        <div class="container" style="background-color:white;">
+            <h1 style="text-align:left; margin-left:40px ;margin-top:20px; margin-down:100px; font-size:30px; font-style: oblique"> Restaurants</h1>
+            <form type="get" action="/result/" style="text-align:center;" class="form-inline">
+                <div class="container">
+                    <input id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" id="submit" type="submit">Search</button>
+                        <span>
+                            <br>
+                            <input class="form-control" type="checkbox" name="checkbox">Search by Reviews instead
+                </div>
+            </form>
 
-  <div class="container" style="background-color:white;">
-  <div id="restaurant_list" style="margin:0px 0px 0px 100px;">
-    <h1 style="text-align:left; margin-left:40px ;margin-top:20px; margin-down:100px; font-size:30px; font-style: oblique"> Restaurants</h1>
-    <form type="get" action="/result/" style="text-align:center;" class="form-inline" >
-
-      <div class="container" >
-        <input  id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
-
-        <span class="input-group-btn">
-          <button class="btn btn-primary" id="submit" type="submit">Search</button>
-        <span>
-
-          <br>
-      <input class="form-control" type="checkbox" name="checkbox">Search by Reviews instead
-      </div>
-    </form>
-      <h6 style="margin-top:50px"> Query time: {{Qtime}} milliseconds;  Number of documents found: {{numFound}} </h6>
-      <ul style="margin:70px 0px 0px 0px; list-style-type:none">
-        {% for x in doc %}
+            <h6 style="margin-top:50px"> Query time: {{Qtime}} milliseconds;  Number of documents found: {{numFound}} </h6>
+            <ul style="margin:70px 0px 0px 100px; list-style-type:none">
+                {% for x in doc %}
 
 
-        <li>
-          <div class="row" style="clear:left;">
-          <div style="width:15%;float:left">
-            <img src="{{x.0.Image| cut:"['" | cut:"']"}}" style="width:200px;height:200px">
-          </div>
-          <div style="margin-left:20%;">
-          <p> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}" style="font-size:20px">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></p>
-            <p>{{x.0.Price | cut:"['" | cut:"']"}}
-            {{x.0.Type | cut:"['" | cut:"']" }}
-            {{x.0.Number | cut:"['" | cut:"']"}}</p>
-          <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:auto;">{{x.1}}</p>
-          <br><br>
+                <li>
+                    <div class="row" style="clear:left;">
+                        <div style="width:15%;float:left">
+                            <img src="{{x.0.Image| cut:"['" | cut:"']"}}" style="width:200px;height:200px">
+                        </div>
+                        <div style="margin-left:20%;">
+                            <p> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}" style="font-size:20px">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></p>
+                            <p>
+                                {{x.0.Price | cut:"['" | cut:"']"}}
+                                {{x.0.Type | cut:"['" | cut:"']" }}
+                                {{x.0.Number | cut:"['" | cut:"']"}}
+                            </p>
+                            <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:auto;">{{x.1}}</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </li>
+                {% empty %}
+                <div class="jumbotron" style="text-align: center; margin: 0px 100px 0px 0px; background-color:white;">
+                    <div class="container">
+                        <img src="{% static 'cantfind.png' %}" height="82" width="82"</img>
+                        <p>No relevant restaurants found</p>
+                    </div>
+                    {% endfor %}
+            </ul>
         </div>
-      </div>
-        </li>
-        {% empty %}
-        <div class="jumbotron" style="text-align: center; background-color:white;">
-          <div class="container">
-            <img src="{% static 'cantfind.png' %}" height="82" width="82"</img>
-            <p>No relevant restaurants found</p>
-          </div>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+    </div>
 
 </body>
 </html>
