@@ -5,16 +5,26 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-  <form type="get" action="/result/" style="text-align:center;margin-top:40px; margin-bottom:50px">
+    <form type="get" action="/result/" style="text-align:center;background-image: url('{% static "bg.png"%}');" class="form-inline" >
 
-      <input  id="search_bar" type="text" name="search_bar" style="height:30px; width:400px; margin-right:20px; font-size:15px">
-      <button id="submit" type="submit" style="height:20px; width:60px">Search</button>
-      <br><br><input type="checkbox" name="checkbox">search by review
-  </form>
+      <div class="container" >
+        <input  id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
+
+        <span class="input-group-btn">
+          <button class="btn btn-primary" id="submit" type="submit">Search</button>
+        <span>
+
+          <br>
+      <input class="form-control" type="checkbox" name="checkbox">Search by Reviews instead
+      </div>
+    </form>
 </head>
 
 <body>
-  <div id="restaurant_list" style="margin:0px 0px 0px 100px">
+  <div class="jumbotron d-flex " style="background-image: url('{% static "bg.png"%}');";>
+
+  <div class="container" style="background-color:white;">
+  <div id="restaurant_list" style="margin:0px 0px 0px 100px;">
     <h1 style="text-align:left; margin-left:40px ;margin-top:20px; margin-down:100px; font-size:30px; font-style: oblique"> Restaurants</h1>
       <ul style="margin:70px 0px 0px 0px; list-style-type:none">
         {% for x in doc %}
@@ -36,6 +46,7 @@
       {% endfor %}
     </ul>
   </div>
+</div>
 
   <!--
   <table style="margin-left:100px; margin-top:20px; margin-right:50px">
