@@ -442,6 +442,7 @@
   <field name="Image" type="text_general"/>
   <field name="Number" type="text_general"/>
   <field name="Price" type="text_general"/>
+  <field name="Price2" type="plongs"/>
   <field name="Restaurant" type="text_en" uninvertible="true" indexed="true" stored="true"/>
   <field name="Type" type="text_en" uninvertible="true" indexed="true" stored="true"/>
   <field name="_nest_path_" type="_nest_path_"/>
