@@ -26,11 +26,11 @@ def search_by_restaurant(query):
     r = requests.get(url)
     json_data = r.json()
     doc = json_data["response"]["docs"]
-    #Qtime = json_data["responseHeader"]["QTime"]
-    #numFound = json_data["response"]["numFound"]
+    Qtime = json_data["responseHeader"]["QTime"]
+    numFound = json_data["response"]["numFound"]
 
-    #print("Qtime: "+ Qtime)
-    #print("numFound:" + numFound)
+    print("Qtime: "+ str(Qtime)+"milliseconds")
+    print("numFound:" + str(numFound))
 
 
     review_list = []
@@ -55,7 +55,7 @@ def search_by_restaurant(query):
 
     doc_with_reviews = zip(doc,review_list)
 
-    return doc_with_reviews
+    return doc_with_reviews, Qtime, numFound
 
 
 
@@ -73,7 +73,7 @@ def search_by_review(query):
         else:
             url += "%20%7C%7C%20Reviews%3A"+ x
 
-    #url = url + "&rows=10"
+    url += "&rows=15000"
     #url = "http://localhost:8983/solr/reviews/select?q=Reviews%3A" + query +"&rows=10"
     print(url)
     r = requests.get(url)
@@ -81,6 +81,13 @@ def search_by_review(query):
     doc = json_data["response"]["docs"]
     ID_list = []
     review_list = []
+
+    Qtime = json_data["responseHeader"]["QTime"]
+    #numFound = json_data["response"]["numFound"]
+
+    print("Qtime: "+ str(Qtime)+"milliseconds")
+    #print("numFound:" + str(numFound))
+
 
     for x in doc:
         a = x["RestaurantID"][0]
@@ -92,6 +99,10 @@ def search_by_review(query):
 
     print(ID_list)
     #print(review_list)
+
+    numFound = len(ID_list)
+
+    print("numFound:" + str(numFound))
 
     url2 ="http://localhost:8983/solr/restaurants/select?q="
 
@@ -118,4 +129,4 @@ def search_by_review(query):
 
     doc_with_reviews = zip(ranked_doc,review_list)
 
-    return doc_with_reviews
+    return doc_with_reviews, Qtime, numFound
