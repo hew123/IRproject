@@ -27,23 +27,29 @@
       <input class="form-control" type="checkbox" name="checkbox">Search by Reviews instead
       </div>
     </form>
+
+
       <ul style="margin:70px 0px 0px 0px; list-style-type:none">
         {% for x in doc %}
+
+
         <li>
           <div class="row" style="clear:left;">
           <div style="width:15%;float:left">
             <img src="{{x.0.Image| cut:"['" | cut:"']"}}" style="width:200px;height:200px">
           </div>
-          <div style="margin-left:30%;">
+          <div style="margin-left:20%;">
           <p> <a href="/info/?RestaurantID={{x.0.ID|cut:"["|cut:"]"}}" style="font-size:20px">{{x.0.Restaurant | cut:"['" | cut:"']" }} </a></p>
             <p>{{x.0.Price | cut:"['" | cut:"']"}}
             {{x.0.Type | cut:"['" | cut:"']" }}
             {{x.0.Number | cut:"['" | cut:"']"}}</p>
-          <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:hidden;">{{x.1}}</p>
+          <p id="comment" style="background-color:lightgrey;width:500px;height:90px;text-overflow:ellipsis;overflow:auto;">{{x.1}}</p>
           <br><br>
         </div>
       </div>
         </li>
+        {% empty %}
+        <h1> No relevant restaurant found </h1>
       {% endfor %}
     </ul>
   </div>
