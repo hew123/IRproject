@@ -1,26 +1,36 @@
 import requests
 
-def search_by_restaurant(query):
+def search_by_restaurant(query, rating, price):
 
     words = query.split()
-    for x in words:
-        print(x)
 
-    url = "http://localhost:8983/solr/restaurants/select?q="
+    if(len(words)==0):
+        url = "http://localhost:8983/solr/restaurants/select?q=&rows=100"
 
-    for i, x in enumerate(words):
-        if(i == 0):
-            url += "Restaurant%3A"+ x
-        else:
-            url += "%20%7C%7C%20Restaurant%3A"+ x
+    else:
+        for x in words:
+            print(x)
 
-        url += "%20%7C%7C%20Price%3A" + x
-        url += "%20%7C%7C%20Number%3A" + x
-        url += "%20%7C%7C%20Type%3A" + x
+        url = "http://localhost:8983/solr/restaurants/select?q=("
 
-    url = url + "&rows=100"
+        for i, x in enumerate(words):
+            if(i == 0):
+                url += "Restaurant%3A"+ x
+            else:
+                url += "%20%7C%7C%20Restaurant%3A"+ x
 
-    #http://localhost:8983/solr/restaurants/select?q=Restaurant%3Aupstate%20%7C%7C%20Type%3Aseafood%20%7C%7C%20Restaurant%3ABurger
+            url += "%20%7C%7C%20Type%3A" + x
+
+        url += ")"
+
+        if(rating!="none"):
+            url += "%20%26%26%20Number%3A" + rating
+
+        if(price!="none"):
+            url += "%20%26%26%20Price2%3A" + price
+
+        url += "&rows=100"
+        #http://localhost:8983/solr/restaurants/select?q=Restaurant%3Aupstate%20%7C%7C%20Type%3Aseafood%20%7C%7C%20Restaurant%3ABurger
 
     print(url)
     r = requests.get(url)
