@@ -23,7 +23,12 @@ def result(request):
                 doc, Qtime, numFound = search_by_review(query)
             else:
                 print("unchecked")
-                doc, Qtime, numFound = search_by_restaurant(query)
+                #doc, Qtime, numFound = search_by_restaurant(query)
+                temp_doc, temp_time, temp_numFound = search_by_restaurant(query)
+                if(temp_numFound == 0):
+                    doc, Qtime, numFound = search_by_review(query)
+                else:
+                    doc, Qtime, numFound = temp_doc, temp_time, temp_numFound
             #print(doc)
     except:
         raise Http404('restaurant/review not found')
