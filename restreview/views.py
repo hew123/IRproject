@@ -47,5 +47,5 @@ def info(request):
     except:
         raise Http404('restaurant/review not found')
     #print(request)
-    return render(request, 'info.html',{'doc':doc, 'Qtime':Qtime, 'numFound':numFound})
+    return render(request, 'info.html',{'doc':doc})
     #return render(request, 'info.html')
