@@ -39,7 +39,7 @@ def search_by_restaurant(query, rating, price):
     Qtime = json_data["responseHeader"]["QTime"]
     numFound = json_data["response"]["numFound"]
 
-    if numFound==0:
+    if numFound==0 and len(words)!=0:
         if len(json_data["spellcheck"]["suggestions"])==0:
             suggestion = ""
         else:
@@ -105,7 +105,9 @@ def search_by_review(query,rating,price):
     print("Qtime: "+ str(Qtime)+"milliseconds")
     #print("numFound:" + str(numFound))
 
-    if len(json_data["spellcheck"]["suggestions"])==0:
+    if len(words)==0:
+        suggestion = ""
+    elif len(json_data["spellcheck"]["suggestions"])==0:
         suggestion = ""
     else:
         suggestion = json_data["spellcheck"]["suggestions"][1]["suggestion"][0]["word"]
