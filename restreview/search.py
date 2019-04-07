@@ -69,7 +69,7 @@ def search_by_restaurant(query, rating, price):
 
 
 
-def search_by_review(query):
+def search_by_review(query,rating,price):
 
     words = query.split()
     for x in words:
@@ -110,9 +110,9 @@ def search_by_review(query):
     print(ID_list)
     #print(review_list)
 
-    numFound = len(ID_list)
+    #numFound = len(ID_list)
 
-    print("numFound:" + str(numFound))
+    #print("numFound:" + str(numFound))
 
     url2 ="http://localhost:8983/solr/restaurants/select?q="
 
@@ -137,6 +137,40 @@ def search_by_review(query):
             if(y["ID"][0] == x):
                 ranked_doc.append(y)
 
-    doc_with_reviews = zip(ranked_doc,review_list)
+    ##if doc price and rating do not match query, filter out
+    final_doc = []
+    final_review = []
+    Rating = rating + " star rating"
+
+    print("query: "+Rating+ " , "+price)
+
+    if(rating == "none" and price == "none"):
+        final_doc = ranked_doc
+        final_review = review_list
+    elif(rating != "none" and price != "none"):
+        for i, x in enumerate(ranked_doc):
+            #print("doc: "+ x["Number"][0] + "," + str(x["Price2"][0]))
+            if(x["Number"][0] == Rating and str(x["Price2"][0])==price):
+                #print("they are the same")
+                final_doc.append(x)
+                final_review.append(review_list[i])
+    elif(rating == "none" and price != "none"):
+        for i, x in enumerate(ranked_doc):
+            #print("doc: "+ x["Number"][0] + "," + str(x["Price2"][0]))
+            if(str(x["Price2"][0])==price):
+                #print("they are the same")
+                final_doc.append(x)
+                final_review.append(review_list[i])
+    elif(rating != "none" and price == "none"):
+        for i, x in enumerate(ranked_doc):
+            #print("doc: "+ x["Number"][0] + "," + str(x["Price2"][0]))
+            if(x["Number"][0] == Rating):
+                #print("they are the same")
+                final_doc.append(x)
+                final_review.append(review_list[i])
+
+    numFound = len(final_doc)
+    #doc_with_reviews = zip(ranked_doc,review_list)
+    doc_with_reviews = zip(final_doc,final_review)
 
     return doc_with_reviews, Qtime, numFound

@@ -22,7 +22,7 @@ def result(request):
 
             if request.GET.get('checkbox', None) == "on":
                 print("checked")
-                doc, Qtime, numFound = search_by_review(query)
+                doc, Qtime, numFound = search_by_review(query,rating,price)
             else:
                 print("unchecked")
                 doc, Qtime, numFound = search_by_restaurant(query,rating,price)
