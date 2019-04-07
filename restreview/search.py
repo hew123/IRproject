@@ -11,7 +11,7 @@ def search_by_restaurant(query, rating, price):
         for x in words:
             print(x)
 
-        url = "http://localhost:8983/solr/restaurants/select?q=("
+        url = "http://localhost:8983/solr/restaurants/spell?q=("
 
         for i, x in enumerate(words):
             if(i == 0):
@@ -29,7 +29,7 @@ def search_by_restaurant(query, rating, price):
         if(price!="none"):
             url += "%20%26%26%20Price2%3A" + price
 
-        url += "&rows=100"
+        url += "&rows=100&spellcheck=on"
         #http://localhost:8983/solr/restaurants/select?q=Restaurant%3Aupstate%20%7C%7C%20Type%3Aseafood%20%7C%7C%20Restaurant%3ABurger
 
     print(url)
@@ -39,9 +39,16 @@ def search_by_restaurant(query, rating, price):
     Qtime = json_data["responseHeader"]["QTime"]
     numFound = json_data["response"]["numFound"]
 
+    if numFound==0:
+        if len(json_data["spellcheck"]["suggestions"])==0:
+            suggestion = ""
+        else:
+            suggestion = json_data["spellcheck"]["suggestions"][1]["suggestion"][0]["word"]
+    else:
+        suggestion = ""
+
     print("Qtime: "+ str(Qtime)+"milliseconds")
     print("numFound:" + str(numFound))
-
 
     review_list = []
 
@@ -65,7 +72,7 @@ def search_by_restaurant(query, rating, price):
 
     doc_with_reviews = zip(doc,review_list)
 
-    return doc_with_reviews, Qtime, numFound
+    return doc_with_reviews, Qtime, numFound, suggestion, query
 
 
 
@@ -75,7 +82,7 @@ def search_by_review(query,rating,price):
     for x in words:
         print(x)
 
-    url = "http://localhost:8983/solr/reviews/select?q="
+    url = "http://localhost:8983/solr/reviews/spell?q="
 
     for i, x in enumerate(words):
         if(i == 0):
@@ -83,7 +90,7 @@ def search_by_review(query,rating,price):
         else:
             url += "%20%7C%7C%20Reviews%3A"+ x
 
-    url += "&rows=15000"
+    url += "&rows=15000&spellcheck=on"
     #url = "http://localhost:8983/solr/reviews/select?q=Reviews%3A" + query +"&rows=10"
     print(url)
     r = requests.get(url)
@@ -98,6 +105,10 @@ def search_by_review(query,rating,price):
     print("Qtime: "+ str(Qtime)+"milliseconds")
     #print("numFound:" + str(numFound))
 
+    if len(json_data["spellcheck"]["suggestions"])==0:
+        suggestion = ""
+    else:
+        suggestion = json_data["spellcheck"]["suggestions"][1]["suggestion"][0]["word"]
 
     for x in doc:
         a = x["RestaurantID"][0]
@@ -170,7 +181,8 @@ def search_by_review(query,rating,price):
                 final_review.append(review_list[i])
 
     numFound = len(final_doc)
+
     #doc_with_reviews = zip(ranked_doc,review_list)
     doc_with_reviews = zip(final_doc,final_review)
 
-    return doc_with_reviews, Qtime, numFound
+    return doc_with_reviews, Qtime, numFound, suggestion, query

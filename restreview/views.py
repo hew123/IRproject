@@ -22,10 +22,10 @@ def result(request):
 
             if request.GET.get('checkbox', None) == "on":
                 print("checked")
-                doc, Qtime, numFound = search_by_review(query,rating,price)
+                doc, Qtime, numFound, suggestion, query = search_by_review(query,rating,price)
             else:
                 print("unchecked")
-                doc, Qtime, numFound = search_by_restaurant(query,rating,price)
+                doc, Qtime, numFound, suggestion, query = search_by_restaurant(query,rating,price)
                 #temp_doc, temp_time, temp_numFound = search_by_restaurant(query,rating)
                 #if(temp_numFound == 0):
                 #    doc, Qtime, numFound = search_by_review(query)
@@ -34,7 +34,7 @@ def result(request):
     except:
         raise Http404('restaurant/review not found')
 
-    return render(request, 'result.html',{'doc':doc, 'Qtime':Qtime, 'numFound':numFound})
+    return render(request, 'result.html',{'doc':doc, 'Qtime':Qtime, 'numFound':numFound,'suggestion':suggestion,'query':query})
     #return render(request, 'result.html')
 
 

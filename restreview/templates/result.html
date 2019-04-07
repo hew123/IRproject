@@ -68,6 +68,9 @@
                     </div>
                 </li>
                 {% empty %}
+                {% if suggestion %}
+                  <h5 style="margin-left:10%"> you searched for &nbsp <b>{{query}}</b> &nbsp did you mean : &nbsp <b>{{suggestion}}</b> ?</h5>
+                {% endif %}
                 <div class="jumbotron" style="text-align: center; margin: 0px 100px 0px 0px; background-color:white;">
                     <div class="container">
                         <img src="{% static 'cantfind.png' %}" height="82" width="82"</img>
