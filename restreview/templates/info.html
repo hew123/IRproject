@@ -76,12 +76,12 @@
               <tbody id="myTable">
                 {% for x in doc %}
                 <tr>
-                  <td id="sentiments"> {% if x.label.0 == 1 %} Positive
-                                        {% elif x.label.0 == 0 %} Neutral
-                                        {% elif x.label.0 == -1 %} Negative
+                  <td id="sentiments"> {% if x.label.0 == 1 %} <i class="far fa-smile-beam"></i> Positive
+                                        {% elif x.label.0 == 0 %} <i class="far fa-meh"></i>  Neutral
+                                        {% elif x.label.0 == -1 %} <i class="far fa-frown"></i>  Negative
                                                                       {% endif %}</td>
                     <td id="rating">{{x.Rating | cut:"['" | cut:"']"}}</td>
-                    <td id="review" style="padding:10px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
+                    <td id="review" style="padding:30px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
                 </tr>
                 {% endfor %}
               </tbody>
