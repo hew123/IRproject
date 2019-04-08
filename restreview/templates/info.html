@@ -4,12 +4,13 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="jumbotron d-flex " style="background-image: url('{% static "bg.png"%}');";>
-        <div class="container" style="background-color:white;">
-            <h1 style="text-align:center; margin-top:100px; margin-down:10px; font-size:20px; font-style: oblique"> Reviews</h1>
+        <div class="container" style="background-color:#eaf4f4;border-style:solid;">
+            <h1 style="text-align:left; margin-left:40px ;margin-top:20px; margin-down:100px; font-size:30px; font-style: oblique"> Reviews</h1>
             <form type="get" action="/result/" style="text-align:center;" class="form-inline">
                 <div class="container">
                     <input id="search_bar" name="search_bar" class="form-control" type="text" placeholder="Search by Restaurants" style="width: 400px; margin: auto" aria-label="Search">
@@ -45,10 +46,23 @@
             </form>
 
             <div id="rest_details">
-              {{doc2.0.Restaurant}} &nbsp
-              {{doc2.0.Price | cut:"['" | cut:"']" }}&nbsp
-              {{doc2.0.Number | cut:"['" | cut:"']"}} &nbsp
-              {{doc2.0.Type}}
+              <ul style="margin-left:100px;margin-top:50px;">
+                  <div class="row" style="clear:left;">
+                      <div style="width:15%;float:left">
+                          <img src="{{doc2.0.Image| cut:"['" | cut:"']"}}" style="width:220px;height:220px">
+                      </div>
+                      <div style="margin-left:20%;">
+                          <p style="font-size:20px"><i><u>{{doc2.0.Restaurant}}</u></i></p>
+                          <p>
+                            <span <i class="fas fa-file-invoice-dollar"></i> {{doc2.0.Price | cut:"['" | cut:"']" }} </span><br>
+                                       <span <i class="fas fa-tag"></i> {{doc2.0.Type}} </span><br>
+                                       <span <i class="far fa-star"></i><b> {{doc2.0.Number | cut:"['" | cut:"']"}}</b></span>
+                          </p>
+
+                          <br><br>
+                      </div>
+                  </div>
+              </ul>
             </div>
 
             <table style="margin-left:100px; margin-top:50px; margin-right:50px">
