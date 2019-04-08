@@ -80,7 +80,7 @@
                                         {% elif x.label.0 == 0 %} <i class="far fa-meh"></i>  Neutral
                                         {% elif x.label.0 == -1 %} <i class="far fa-frown"></i>  Negative
                                                                       {% endif %}</td>
-                    <td id="rating">{{x.Rating | cut:"['" | cut:"']"}}</td>
+                    <td id="rating"><b> {{x.Rating | cut:"['" | cut:"star rating']"}} <i class="far fa-star"></i></td>
                     <td id="review" style="padding:30px">{{x.Reviews | cut:"['" | cut:"']"}}</td>
                 </tr>
                 {% endfor %}
