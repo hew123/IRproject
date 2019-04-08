@@ -44,6 +44,13 @@
                 </div>
             </form>
 
+            <div id="rest_details">
+              {{doc2.0.Restaurant}} &nbsp
+              {{doc2.0.Price | cut:"['" | cut:"']" }}&nbsp
+              {{doc2.0.Number | cut:"['" | cut:"']"}} &nbsp
+              {{doc2.0.Type}}
+            </div>
+
             <table style="margin-left:100px; margin-top:50px; margin-right:50px">
               <thead>
                 <tr>

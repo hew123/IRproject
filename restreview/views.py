@@ -50,8 +50,14 @@ def info(request):
             json_data = r.json()
             doc = json_data["response"]["docs"]
             #print(doc)
+
+            url2 ="http://localhost:8983/solr/restaurants/select?q=ID%3A" + query
+            print(url2)
+            r2 = requests.get(url2)
+            json_data2 = r2.json()
+            doc2 = json_data2["response"]["docs"]
     except:
         raise Http404('restaurant/review not found')
     #print(request)
-    return render(request, 'info.html',{'doc':doc})
+    return render(request, 'info.html',{'doc':doc,'doc2':doc2})
     #return render(request, 'info.html')
